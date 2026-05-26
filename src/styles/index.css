@@ -1,0 +1,176 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand Palette */
+    --brand-charcoal: #111111;
+    --brand-cream: #F4EFEA;
+    --brand-olive: #7A8F7C;
+    --brand-chili: #A65F45;
+    --brand-leaf: #7A8F7C;
+    --brand-sand: #D8CFC4;
+    --brand-dark-bg: #111111;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--brand-cream);
+    color: var(--brand-charcoal);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a,
+  button,
+  select,
+  input,
+  [role="button"] {
+    cursor: pointer;
+  }
+}
+
+/* =========================================
+   BOTPRESS THEME
+========================================= */
+
+/* Floating button */
+.bpFab {
+  background: var(--brand-charcoal) !important;
+  border-radius: 9999px !important;
+  box-shadow:
+    0 10px 30px rgba(17, 17, 17, 0.18) !important;
+  transition: all 0.25s ease;
+
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  min-height: 44px !important;
+
+  background-size: 55% !important;
+
+}
+
+.bpFab:hover {
+  transform: translateY(-2px);
+  background: var(--brand-olive) !important;
+}
+
+/* Chat container */
+.bpWebchat {
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  background: var(--brand-cream) !important;
+  border: 1px solid rgba(17, 17, 17, 0.08) !important;
+
+  box-shadow:
+    0 20px 60px rgba(17, 17, 17, 0.12),
+    0 8px 24px rgba(17, 17, 17, 0.08) !important;
+
+  backdrop-filter: blur(20px);
+}
+
+/* Header */
+.bpHeaderContainer {
+  background: var(--brand-charcoal) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Header title */
+.bpHeaderContentTitle {
+  color: var(--brand-cream) !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Header subtitle */
+.bpHeaderContentDescription {
+  color: rgba(244, 239, 234, 0.72) !important;
+}
+
+/* Bot message bubble */
+.bpMessageBlocksBubbleFromBot {
+  background: white !important;
+  color: var(--brand-charcoal) !important;
+
+  border-radius: 18px !important;
+  border: 1px solid rgba(17, 17, 17, 0.06);
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+/* User message bubble */
+.bpMessageBlocksBubbleFromUser {
+  background: var(--brand-olive) !important;
+  color: white !important;
+
+  border-radius: 18px !important;
+  box-shadow:
+    0 4px 12px rgba(122, 143, 124, 0.25);
+}
+
+/* Input area */
+.bpComposer {
+  background: var(--brand-cream) !important;
+  border-top: 1px solid rgba(17, 17, 17, 0.06) !important;
+}
+
+/* Input field */
+.bpComposerInput {
+  background: white !important;
+  border: 1px solid rgba(17, 17, 17, 0.08) !important;
+  border-radius: 14px !important;
+
+  color: var(--brand-charcoal) !important;
+  padding: 14px !important;
+
+  transition: all 0.2s ease;
+}
+
+/* Input focus */
+.bpComposerInput:focus {
+  border-color: var(--brand-olive) !important;
+  box-shadow:
+    0 0 0 4px rgba(122, 143, 124, 0.12) !important;
+}
+
+/* Send button */
+.bpComposerButton {
+  background: var(--brand-charcoal) !important;
+  color: white !important;
+  border-radius: 12px !important;
+}
+
+.bpComposerButton:hover {
+  background: var(--brand-chili) !important;
+}
+
+/* Scrollbar */
+.bpWebchat ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.bpWebchat ::-webkit-scrollbar-thumb {
+  background: rgba(17, 17, 17, 0.15);
+  border-radius: 999px;
+}
+
+/* Suggested replies */
+.bpReplyButton {
+  background: white !important;
+  border: 1px solid rgba(17, 17, 17, 0.08) !important;
+  color: var(--brand-charcoal) !important;
+
+  border-radius: 999px !important;
+}
+
+.bpReplyButton:hover {
+  background: var(--brand-sand) !important;
+}
+
+/* Typing indicator */
+.bpTypingIndicator {
+  color: var(--brand-olive) !important;
+}
